@@ -73,24 +73,19 @@
             height: 100%;
             border: 0;
         }
-        /* Estilos para asegurar que las imágenes de placeholder sean visibles */
-        .placeholder-img {
+        /* Estilos para asegurar que las imágenes sean visibles */
+        .img-responsive {
             width: 100%;
             height: auto;
-            max-width: 150px; /* Tamaño máximo para logos */
             object-fit: contain;
         }
-        .hero-logo {
-            width: 100%;
-            height: auto;
-            max-width: 80px; /* Tamaño para el logo en el header */
-            object-fit: contain;
+        .logo-header {
+            height: 48px; /* Tamaño fijo para el logo en el header */
+            width: auto;
         }
-        .main-image-placeholder {
-            width: 100%;
-            height: auto;
-            max-width: 400px; /* Tamaño para la imagen principal de la sección */
-            object-fit: contain;
+        .logo-section {
+            height: 96px; /* Tamaño fijo para logos en secciones */
+            width: auto;
         }
     </style>
 </head>
@@ -101,8 +96,7 @@
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
             <!-- Logo de EMUNA -->
             <div class="flex items-center mb-4 md:mb-0">
-                <!-- Placeholder para el Logo de EMUNA -->
-                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=EMUNA" alt="Logo de EMUNA" class="hero-logo mr-3 rounded-md">
+                <img src="https://raw.githubusercontent.com/elispastorst/emuna-landing-page/main/LOGO_EMUNA.png" alt="Logo de EMUNA" class="logo-header mr-3 rounded-md">
                 <h1 class="text-3xl font-bold text-white">EMUNA</h1>
             </div>
             <!-- Navegación -->
@@ -128,7 +122,6 @@
             <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up delay-100">
                 Donde la Fe y la Colaboración Construyen un Futuro Próspero para Todos.
             </p>
-            <!-- Este botón también se ha cambiado a mostaza -->
             <a href="#contacto" class="btn-primary inline-block text-lg font-semibold animate-fade-in-up delay-200">
                 Únete a la Comunidad
             </a>
@@ -152,8 +145,7 @@
                     </p>
                 </div>
                 <div class="flex justify-center items-center">
-                    <!-- Placeholder para la imagen de financiamiento cuadrático -->
-                    <img src="https://placehold.co/400x250/6a0dad/ffffff?text=Financiamiento+Cuadratico" alt="Financiamiento Cuadrático" class="rounded-lg shadow-xl main-image-placeholder">
+                    <img src="https://raw.githubusercontent.com/elispastorst/emuna-landing-page/main/imagen%20de%20financiamiento%20cuadratico.png" alt="Financiamiento Cuadrático" class="rounded-lg shadow-xl img-responsive">
                 </div>
             </div>
         </div>
@@ -164,7 +156,6 @@
         <div class="container mx-auto px-4 text-center">
             <h3 class="text-4xl font-bold mb-12 text-gradient">Descubre EMUNA en Acción</h3>
             <div class="video-container mx-auto max-w-4xl">
-                <!-- Video de YouTube actualizado -->
                 <iframe src="https://www.youtube.com/embed/cjyOailNbTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p class="mt-8 text-lg max-w-2xl mx-auto">
@@ -220,21 +211,21 @@
                 EMUNA crece gracias al apoyo de una comunidad vibrante y aliados estratégicos que comparten nuestra visión de un futuro colaborativo y próspero.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
-                <!-- Placeholder para Logo MDM Radio -->
+                <!-- Logo MDM Radio -->
                 <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32">
-                    <img src="https://placehold.co/150x80/6a0dad/ffffff?text=MDM+Radio" alt="Logo MDM Radio" class="placeholder-img">
+                    <img src="https://raw.githubusercontent.com/elispastorst/emuna-landing-page/main/Logotipo%20de%20MDM%20Radio.png" alt="Logo MDM Radio" class="img-responsive">
                 </div>
-                <!-- Placeholder para Logo Emprende World -->
+                <!-- Logo Emprende World -->
                 <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32">
-                    <img src="https://placehold.co/150x80/6a0dad/ffffff?text=Emprende+World" alt="Logo Emprende World" class="placeholder-img">
+                    <img src="https://raw.githubusercontent.com/elispastorst/emuna-landing-page/main/Emprende_World_Logo.png" alt="Logo Emprende World" class="img-responsive">
                 </div>
-                <!-- Placeholder para Logo Emuna Coins -->
+                <!-- Logo Emuna Coins -->
                 <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32">
-                    <img src="https://placehold.co/150x80/6a0dad/ffffff?text=Emuna+Coins" alt="Logo Emuna Coins" class="placeholder-img">
+                    <img src="https://raw.githubusercontent.com/elispastorst/emuna-landing-page/main/Logotipo%20de%20Emuna%20Coins.png" alt="Logo Emuna Coins" class="img-responsive">
                 </div>
-                <!-- Placeholder para otro aliado o el mismo logo de EMUNA si no hay más -->
+                <!-- Logo EMUNA (en caso de no haber otro aliado) -->
                 <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32">
-                    <img src="https://placehold.co/150x80/6a0dad/ffffff?text=EMUNA" alt="Logo EMUNA" class="placeholder-img">
+                    <img src="https://raw.githubusercontent.com/elispastorst/emuna-landing-page/main/LOGO_EMUNA.png" alt="Logo EMUNA" class="img-responsive">
                 </div>
             </div>
         </div>
@@ -274,3 +265,4 @@
 
 </body>
 </html>
+
