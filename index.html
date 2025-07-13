@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMUNA: El Poder de la Colaboración</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Un gris claro para el fondo */
+            color: #333;
+        }
+        .header-bg {
+            background-color: #1a202c; /* Un gris oscuro para el header */
+        }
+        /* Color mostaza para los botones primarios */
+        .btn-primary {
+            background-color: #F59E0B; /* Mostaza (Tailwind amber-500) */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #D97706; /* Mostaza más oscuro al pasar el mouse (Tailwind amber-600) */
+        }
+        .section-bg-light {
+            background-color: #ffffff; /* Fondo blanco para secciones */
+        }
+        .section-bg-dark {
+            background-color: #e2e8f0; /* Fondo gris claro para secciones alternas */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #4f46e5, #8b5cf6); /* Gradiente morado/púrpura */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .footer-bg {
+            background-color: #1a202c;
+            color: #cbd5e0;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+        /* Estilos para el video */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem; /* Bordes redondeados */
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* Estilos para asegurar que las imágenes de placeholder sean visibles */
+        .placeholder-img {
+            width: 100%;
+            height: auto;
+            max-width: 150px; /* Tamaño máximo para logos */
+            object-fit: contain;
+        }
+        .hero-logo {
+            width: 100%;
+            height: auto;
+            max-width: 80px; /* Tamaño para el logo en el header */
+            object-fit: contain;
+        }
+        .main-image-placeholder {
+            width: 100%;
+            height: auto;
+            max-width: 400px; /* Tamaño para la imagen principal de la sección */
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="header-bg py-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <!-- Logo de EMUNA -->
+            <div class="flex items-center mb-4 md:mb-0">
+                <!-- Placeholder para el Logo de EMUNA -->
+                <img src="https://placehold.co/80x80/6a0dad/ffffff?text=EMUNA" alt="Logo de EMUNA" class="hero-logo mr-3 rounded-md">
+                <h1 class="text-3xl font-bold text-white">EMUNA</h1>
+            </div>
+            <!-- Navegación -->
+            <nav class="space-x-4">
+                <a href="#inicio" class="text-white hover:text-gray-300 transition duration-300">Inicio</a>
+                <a href="#que-es-emuna" class="text-white hover:text-gray-300 transition duration-300">¿Qué es EMUNA?</a>
+                <a href="#como-funciona" class="text-white hover:text-gray-300 transition duration-300">Cómo Funciona</a>
+                <a href="#comunidad" class="text-white hover:text-gray-300 transition duration-300">Comunidad</a>
+                <a href="#contacto" class="text-white hover:text-gray-300 transition duration-300">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-gradient-to-r from-purple-600 to-indigo-700 text-white py-20 md:py-32 overflow-hidden rounded-b-lg shadow-lg">
+        <div class="absolute inset-0 opacity-20">
+            <!-- Patrón de fondo sutil si se desea -->
+        </div>
+        <div class="container mx-auto text-center relative z-10 px-4">
+            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                Bienvenido a <span class="text-yellow-300">EMUNA</span>
+            </h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up delay-100">
+                Donde la Fe y la Colaboración Construyen un Futuro Próspero para Todos.
+            </p>
+            <!-- Este botón también se ha cambiado a mostaza -->
+            <a href="#contacto" class="btn-primary inline-block text-lg font-semibold animate-fade-in-up delay-200">
+                Únete a la Comunidad
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección ¿Qué es EMUNA? -->
+    <section id="que-es-emuna" class="section-bg-light py-16 md:py-24 rounded-lg shadow-md mx-4 mt-8">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gradient">¿Qué es EMUNA?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-lg leading-relaxed space-y-6">
+                    <p>
+                        EMUNA es más que una plataforma; es un movimiento que fusiona la **Fe** con la **Colaboración Colectiva** para impulsar proyectos y sueños. Creemos en el poder de la comunidad para transformar ideas en realidades tangibles.
+                    </p>
+                    <p>
+                        Nuestro modelo se basa en el **Financiamiento Cuadrático**, un enfoque innovador que amplifica el impacto de las pequeñas contribuciones, asegurando que cada voz y cada aporte cuenten de manera significativa.
+                    </p>
+                    <p>
+                        Aquí, cada miembro es un pilar fundamental. Al unirte a EMUNA, no solo apoyas iniciativas valiosas, sino que también te conviertes en parte de una red de individuos comprometidos con el crecimiento mutuo y la prosperidad compartida.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <!-- Placeholder para la imagen de financiamiento cuadrático -->
+                    <img src="https://placehold.co/400x250/6a0dad/ffffff?text=Financiamiento+Cuadratico" alt="Financiamiento Cuadrático" class="rounded-lg shadow-xl main-image-placeholder">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Video Explicativo -->
+    <section class="section-bg-dark py-16 md:py-24 rounded-lg shadow-md mx-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gradient">Descubre EMUNA en Acción</h3>
+            <div class="video-container mx-auto max-w-4xl">
+                <!-- Video de YouTube actualizado -->
+                <iframe src="https://www.youtube.com/embed/cjyOailNbTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="mt-8 text-lg max-w-2xl mx-auto">
+                Mira este breve video para entender cómo EMUNA está revolucionando la forma en que apoyamos y crecemos juntos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Cómo Funciona -->
+    <section id="como-funciona" class="section-bg-light py-16 md:py-24 rounded-lg shadow-md mx-4 mt-8">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gradient">Cómo Funciona EMUNA</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paso 1 -->
+                <div class="card p-8 text-center">
+                    <div class="flex justify-center mb-4">
+                        <svg class="icon text-purple-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-4">1. Regístrate y Conéctate</h4>
+                    <p class="text-gray-700">
+                        Crea tu perfil en nuestra plataforma segura y empieza a explorar proyectos.
+                    </p>
+                </div>
+                <!-- Paso 2 -->
+                <div class="card p-8 text-center">
+                    <div class="flex justify-center mb-4">
+                        <svg class="icon text-purple-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-4">2. Explora Proyectos</h4>
+                    <p class="text-gray-700">
+                        Descubre iniciativas inspiradoras que necesitan tu apoyo.
+                    </p>
+                </div>
+                <!-- Paso 3 -->
+                <div class="card p-8 text-center">
+                    <div class="flex justify-center mb-4">
+                        <svg class="icon text-purple-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-4">3. Contribuye y Multiplica</h4>
+                    <p class="text-gray-700">
+                        Tu aporte, por pequeño que sea, se magnifica con el Financiamiento Cuadrático.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Comunidad y Aliados -->
+    <section id="comunidad" class="section-bg-dark py-16 md:py-24 rounded-lg shadow-md mx-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gradient">Nuestra Comunidad y Aliados</h3>
+            <p class="text-lg mb-12 max-w-3xl mx-auto">
+                EMUNA crece gracias al apoyo de una comunidad vibrante y aliados estratégicos que comparten nuestra visión de un futuro colaborativo y próspero.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
+                <!-- Placeholder para Logo MDM Radio -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32">
+                    <img src="https://placehold.co/150x80/6a0dad/ffffff?text=MDM+Radio" alt="Logo MDM Radio" class="placeholder-img">
+                </div>
+                <!-- Placeholder para Logo Emprende World -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32">
+                    <img src="https://placehold.co/150x80/6a0dad/ffffff?text=Emprende+World" alt="Logo Emprende World" class="placeholder-img">
+                </div>
+                <!-- Placeholder para Logo Emuna Coins -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32">
+                    <img src="https://placehold.co/150x80/6a0dad/ffffff?text=Emuna+Coins" alt="Logo Emuna Coins" class="placeholder-img">
+                </div>
+                <!-- Placeholder para otro aliado o el mismo logo de EMUNA si no hay más -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32">
+                    <img src="https://placehold.co/150x80/6a0dad/ffffff?text=EMUNA" alt="Logo EMUNA" class="placeholder-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Llamada a la Acción / Contacto -->
+    <section id="contacto" class="section-bg-light py-16 md:py-24 rounded-lg shadow-md mx-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-8 text-gradient">Únete a la <span class="text-yellow-300">Transformación</span> de la Colaboración</h3>
+            <p class="text-lg mb-12 max-w-2xl mx-auto">
+                ¿Listo para ser parte de algo grande? Contáctanos o regístrate hoy mismo.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <!-- Enlace a Telegram -->
+                <a href="https://t.me/elispastor" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block text-lg font-semibold">
+                    Contáctanos por Telegram
+                </a>
+                <!-- Enlace de Registro en Emprende World -->
+                <a href="https://www.emprendeworld.com/websignup?ref=81322593" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block text-lg font-semibold">
+                    Regístrate en Emprende World
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-bg py-8 mt-8 rounded-t-lg shadow-inner">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-sm">&copy; 2025 EMUNA. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacidad</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Términos</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
